@@ -17,7 +17,7 @@ export default function Work() {
 
             <p className="lead">
               Over the past 13+ years I've helped build products used by millions,
-              collaborated with startups and small businesses, and designed experiences
+              collaborated with small businesses, and designed experiences
               across web, branding, and print.
             </p>
           </header>
@@ -192,7 +192,7 @@ export default function Work() {
                   <h3>SparkBird</h3>
 
                   <p>
-                    Helped design a birdwatching app focused on discovery,
+                    Designed a birdwatching app focused on discovery,
                     identification, and a cleaner experience for bird enthusiasts.
                   </p>
 

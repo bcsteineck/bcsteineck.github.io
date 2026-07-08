@@ -40,21 +40,17 @@
     font-size: $size-1;
     white-space: nowrap;
     box-sizing: border-box;
-  }
-
-  @include tablet {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    text-align: center;
   }
 
   @include mobile {
+    justify-content: center;
     gap: $space-12;
     margin-block-start: $space-16;
 
     span {
       width: 100%;
-      text-align: center;
+      flex: 1;
     }
   }
 }

@@ -56,9 +56,8 @@ export default function About() {
 
           <p>
             I believe great frontend development is about more than matching a
-            design file. It's about understanding the user experience, making
-            thoughtful implementation decisions, and caring about the details
-            that shape how a product feels.
+            design file. It's about understanding the user experience and making
+            thoughtful implementation decisions.
           </p>
 
           <p>
@@ -67,12 +66,6 @@ export default function About() {
             components, refining layouts, or improving user flows, I try to
             bring both a designer's eye and an engineer's mindset to every
             project.
-          </p>
-
-          <p>
-            I'm drawn to things that feel intentional, functional, and well
-            crafted. That mindset naturally carries over into the way I build
-            for the web.
           </p>
         </section>
 
