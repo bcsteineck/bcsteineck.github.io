@@ -35,7 +35,7 @@ const Nav = ({ isOpen, setIsOpen }: NavProps) => {
         aria-label={isOpen ? 'Close menu' : 'Open menu'}
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+        {isOpen ? <X size={32} /> : <Menu size={32} />}
       </button>
 
       <ul

@@ -62,12 +62,7 @@ export default function Header() {
 
   return (
     <header
-      className={`
-        site-header
-        ${isHome ? 'is-home' : 'is-interior'}
-        ${isScrolled ? 'is-scrolled' : ''}
-        ${isHidden ? 'is-hidden' : ''}
-      `}
+      className={`site-header ${isHome ? 'is-home' : 'is-interior'} ${isScrolled ? 'is-scrolled' : ''} ${isHidden ? 'is-hidden' : ''}`}
     >
       <div className="container">
         <Nav

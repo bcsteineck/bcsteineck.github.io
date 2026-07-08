@@ -62,10 +62,6 @@ p {
 	+ p {
 		margin-top: $space-16;
 	}
-
-  @include tablet {
-    font-size: $size-2;
-  }
 }
 
 .page-title {

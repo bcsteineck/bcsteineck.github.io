@@ -14,12 +14,16 @@
     align-items: center;
     justify-content: center;
     border-radius: $radius;
-    border: var(--border-weight) solid var(--bg-inverse);
+    border: none;
     background: var(--bg);
     z-index: 1;
     color: var(--text);
+    padding: 0;
 
-    &:hover,
+    &:hover {
+        cursor: pointer;
+    }
+
     &:active {
         cursor: pointer;
         background: var(--accent);

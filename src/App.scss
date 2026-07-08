@@ -3,6 +3,10 @@
 #main {
   padding-top: $header-height;
 
+  &.main-home {
+    padding-top: 0;
+  }
+
   @include tablet {
     padding-top: $header-height-mobile;
   }
