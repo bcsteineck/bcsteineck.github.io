@@ -1,0 +1,66 @@
+@use './styles/globals' as *;
+@use './styles/typography' as *;
+
+:root {
+  --text: #000;
+  --text-secondary: #707070;
+  --text-inverse: #fff;
+  --bg: #fff;
+  --bg-inverse: #000;
+  --bg-light: #f5f5f5;
+  --light: #fff;
+  --dark: #000;
+  --border: #000;
+  --accent: #87FFBD;
+  --hero-dot-color: rgba(0, 0, 0, 0.35);
+  --border-weight: 2px;
+  --error: #c43;
+  
+
+  @media (prefers-color-scheme: dark) {
+    // --text: #fff;
+    // --text-secondary: #999999;
+    // --text-inverse: #000;
+    // --bg: #000;
+    // --bg-inverse: #fff;
+    // --bg-light: #505050;
+    // --light: #000;
+    // --dark: #fff;
+    // --border: #fff;
+    // --accent: #097c78;
+    // --hero-dot-color: rgba(255, 255, 255, 0.28);
+    // --border-weight: 1px;
+  }
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  color-scheme: light dark;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &.nav-open {
+    overflow: hidden;
+  }
+
+  &.nav-open {
+    overflow: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

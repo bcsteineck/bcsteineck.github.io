@@ -1,0 +1,36 @@
+// Global Variables
+
+$open: 'Open Sans', system-ui, sans-serif;
+$figtree: 'Figtree', system-ui, sans-serif;
+
+$space-4: 4px;
+$space-8: 8px;
+$space-12: 12px;
+$space-16: 16px;
+$space-24: 24px;
+$space-32: 32px;
+
+$size-1: 0.75rem;
+$size-2: 0.875rem;
+$size-3: 1rem;
+$size-4: 1.125rem;
+$size-5: 1.25rem;
+$size-6: 1.5rem;
+$size-7: 1.75rem;
+$size-8: 2rem;
+$size-9: 2.5rem;
+$size-10: 3rem;
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$widescreen: 1440px;
+
+$header-height: 80px;
+$header-height-mobile: 60px;
+$footer-height: 128px;
+$page-padding: 48px;
+$page-min-height: $header-height + $footer-height + $page-padding;
+$page-min-height-mobile: $header-height-mobile + $footer-height + $page-padding;
+
+$radius: 4px;

@@ -1,0 +1,43 @@
+@use './styles/globals' as *;
+
+#main {
+  padding-top: $header-height;
+
+  @include tablet {
+    padding-top: $header-height-mobile;
+  }
+}
+
+.container {
+  width: min(100% - $space-24, 1024px);
+  margin-inline: auto;  
+}
+
+.page {
+  padding-block: $space-24;
+  min-height: calc(100vh - $page-min-height);
+  margin-inline: auto;
+
+  .container {
+    width: min(100% - $space-24, 768px);
+  }
+
+  @include tablet {
+    min-height: calc(100vh - $page-min-height-mobile);
+  }
+}
+
+hr {
+  border: none;
+  height: var(--border-weight);
+  background-color: var(--border);
+  margin-top: $space-32;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}

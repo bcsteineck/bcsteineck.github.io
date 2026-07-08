@@ -1,0 +1,81 @@
+@use '../../styles/globals' as *;
+
+.contact-form {
+  display: grid;
+  gap: $space-32;
+}
+
+.form-control {
+  border-bottom: 1px solid var(--border);
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease;
+
+  &:focus {
+    border-color: var(--accent);
+    box-shadow: 0 1px 0 var(--accent);
+  }
+}
+
+.form-error {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--error);
+}
+
+.contact-links {
+  display: flex;
+  gap: $space-16;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-block: $space-32;
+
+  span {
+    padding: $space-4 $space-12;
+    border-radius: $radius;
+    background: var(--bg-light);
+    color: var(--text);
+    font-weight: 600;
+    font-size: $size-1;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  @include mobile {
+    gap: $space-12;
+    margin-block-start: $space-16;
+
+    span {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.form-success {
+  margin: 0;
+  color: var(--text);
+  font-weight: 700;
+  padding: $space-4 $space-12;
+  background: var(--accent);
+  border-radius: $radius;
+  display: inline-block;
+  width: fit-content;
+}
+
+.form-error {
+  margin: 0;
+  color: var(--error);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

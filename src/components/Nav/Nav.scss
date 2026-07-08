@@ -1,0 +1,133 @@
+@use '../../styles/globals' as *;
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+  &-toggle {
+    display: none;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius;
+    border: var(--border-weight) solid var(--bg-inverse);
+    background: var(--bg);
+    z-index: 1;
+    color: var(--text);
+
+    &:hover,
+    &:active {
+        cursor: pointer;
+        background: var(--accent);
+        border-color: var(--accent);
+    }
+  }
+
+  &-logo {
+    font-family: $figtree;
+    font-weight: 700;
+    font-size: $size-5;
+    text-transform: uppercase;
+    margin-left: 0;
+    color: var(--text-inverse);
+    background: var(--bg-inverse);
+    padding: $space-4 $space-12;
+    border-radius: $radius;
+    transition: background 0.2s ease, color 0.2s ease;
+    z-index: 1;
+
+    &:hover,
+    &:active {
+        background: var(--accent);
+        color: var(--text);
+    }
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-item {
+    font-size: $size-2;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+
+  &-link {
+    @include link-highlight;
+  }
+}
+
+@include tablet {
+    .nav {
+        &-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg);
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: $header-height $space-12;
+
+            &.is-open {
+                display: flex;
+            }
+
+						@include tablet {
+							padding: $header-height-mobile $space-12;
+						}
+        }
+
+        &-toggle {
+            display: flex;
+        }
+
+        &-item {
+            width: 100%;
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--text);
+            border: 2px solid var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: $radius;
+            transition: all 0.2s ease;
+            font-size: $size-4;
+            font-weight: 800;
+            font-family: $figtree;
+            width: 100%;
+            justify-content: center;
+
+            &:hover,
+            &.active {
+                background: var(--accent);
+                border-color: var(--accent);
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            &:after {
+              display: none;
+            }
+        }
+    }
+}

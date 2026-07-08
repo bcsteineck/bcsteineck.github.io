@@ -1,0 +1,35 @@
+@use '../../../styles/globals' as *;
+
+.button {
+     display: flex;
+     align-items: center;
+     gap: $space-8;
+     text-decoration: none;
+     color: var(--text);
+     border: var(--border-weight) solid var(--border);
+     padding: 0.5rem 1rem;
+     border-radius: $radius;
+     transition: all 0.2s ease;
+     font-size: $size-4;
+     font-weight: 800;
+     font-family: $figtree;
+     background-color: var(--bg);
+     width: fit-content;
+     justify-content: center;
+     box-sizing: border-box;
+
+    &:hover,
+    &:active {
+        cursor: pointer;
+        background-color: var(--accent);
+        border-color: var(--accent);
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+p + .button {
+    margin-top: $space-24;
+}

@@ -1,0 +1,89 @@
+@use '../../styles/globals' as *;
+
+.site-footer {
+    padding-block: $space-32;
+    margin-top: $space-32;
+    background-color: var(--bg-light);
+    color: var(--text-secondary);
+
+    &.is-home {
+        display: none;
+    }
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+  &-logo {
+    font-family: $figtree;
+    font-weight: 700;
+    font-size: $size-5;
+    text-transform: uppercase;
+    margin-left: 0;
+    color: var(--text-secondary);
+    padding: $space-4 $space-12;
+    border-radius: $radius;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover,
+    &:active {
+        background: var(--accent);
+        color: var(--text);
+    }
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-item {
+    font-size: $size-2;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+
+  &-link {
+    @include link-highlight;
+
+		&.active {
+			color: var(--text-secondary);
+
+			&:after {
+				transform: translateY(-50%) scaleX(0);
+			}
+
+			&:hover {
+				color: var(--text);
+				
+				&:after {
+					transform: translateY(-50%) scaleX(1);
+				}
+			}
+		}
+  }
+
+  &-copyright {
+    font-size: $size-1;
+  }
+}
+
+@include tablet {
+	.footer {
+		&-content {
+			flex-direction: column;
+		}
+
+		&-nav {
+			display: none;
+		}
+	}
+}
