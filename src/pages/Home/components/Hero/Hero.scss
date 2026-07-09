@@ -188,6 +188,12 @@
   .hero-break {
     display: inline;
   }
+
+  .hero-dots {
+    animation: none;
+    background-size: 32px 32px;
+    background-position: 0 0;
+  }
 }
 
 // Landscape Mobile
