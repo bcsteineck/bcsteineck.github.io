@@ -89,10 +89,6 @@
             &.is-open {
                 display: flex;
             }
-
-						@include tablet {
-							padding: $header-height-mobile $space-12;
-						}
         }
 
         &-toggle {

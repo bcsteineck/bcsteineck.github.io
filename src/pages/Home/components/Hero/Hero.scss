@@ -131,7 +131,7 @@
 
 @include widescreen {
   .hero-title {
-    font-size: 5.5vw;
+    font-size: $hero-max;
   }
 }
 
