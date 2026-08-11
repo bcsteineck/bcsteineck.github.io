@@ -16,7 +16,7 @@
 }
 
 .hero-title {
-  font-size: $hero-max;
+  font-size: 9vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,10 +27,6 @@
 
 .hero-break {
   display: none;
-}
-
-.hero-sup {
-  font-size: 2vw;
 }
 
 .hero-highlight {
@@ -55,8 +51,9 @@
   animation: highlight-write 7s infinite;
 }
 
+.hero-sup,
 .hero-sub {
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 .hero-cta {
@@ -133,18 +130,23 @@
 
 @include widescreen {
   .hero-title {
-    font-size: $hero-max;
+    font-size: 7rem;
+  }
+
+  .hero-sup,
+  .hero-sub  {
+    font-size: 2.5rem;
   }
 }
 
 @include desktop {
   .hero-title {
-    font-size: 7vw;
+    font-size: 8vw;
   }
 
   .hero-sup,
   .hero-sub  {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .hero-subtitle p {
@@ -154,7 +156,7 @@
 
 @include mobile {
   .hero-title {
-    font-size: 13vw;
+    font-size: 10vw;
     text-align: center;
     line-height: 1;
     gap: $space-12;
@@ -167,8 +169,9 @@
 
   .hero-sup,
   .hero-sub  {
-    font-size: 7vw;
+    font-size: 4vw;
     text-align: center;
+    margin-top: $space-12;
   }
 
   .hero-subtitle {
@@ -185,10 +188,6 @@
     .button {
       width: auto;
     }
-  }
-
-  .hero-break {
-    display: inline;
   }
 
   .hero-dots {
