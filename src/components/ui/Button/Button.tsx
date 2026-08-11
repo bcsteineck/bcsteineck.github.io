@@ -14,6 +14,7 @@ type ButtonProps = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   download?: boolean | string;
   disabled?: boolean;
+  id?: string;
 };
 
 export default function Button({
@@ -28,6 +29,7 @@ export default function Button({
   onClick,
   download,
   disabled,
+  id,
 }: ButtonProps) {
   const classes = `button button--${variant} ${className}`.trim();
 
@@ -59,6 +61,7 @@ export default function Button({
       className={classes}
       onClick={onClick}
       disabled={disabled}
+      id={id}
     >
       {children}
     </button>

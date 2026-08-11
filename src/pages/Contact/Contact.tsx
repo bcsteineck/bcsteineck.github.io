@@ -4,6 +4,8 @@ import FormField from '../../components/ui/FormField/FormField'
 import Button from '../../components/ui/Button/Button'
 
 import './Contact.scss'
+import { FileDown } from 'lucide-react';
+import { resume } from '../../assets/images';
 
 type FormState = {
   name: string
@@ -99,8 +101,11 @@ export default function Contact() {
 
             <div className="contact-links">
               <span>bcsteineck@gmail.com</span>
-              <span>651.983.8282</span>
               <span>Minneapolis, MN</span>
+              <Button href={resume} download>
+                Résumé
+                <FileDown />
+              </Button>
               <Button
                 href="https://www.linkedin.com/in/brody-steineck-42583851"
                 target="_blank"

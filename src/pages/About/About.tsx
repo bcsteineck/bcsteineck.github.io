@@ -15,22 +15,26 @@ export default function About() {
         <section className="about-section">
           <div className="about-copy">
             <p>
-              I'm a Minnesota-based frontend developer with a design background
-              and more than 13 years of experience. Most of those years were spent 
-              building digital products at
-              Dow Jones, primarily across MarketWatch and Barron's. My work has
-              always lived at the intersection of design and engineering, where
-              the small details matter: layout, typography, accessibility,
-              performance, responsiveness, and the overall feel of the final
-              experience.
+              I'm a Minnesota-based Design Engineer and Web Designer with more 
+              than 13 years of experience creating digital products. Most of that 
+              time was spent at Dow Jones, crafting experiences for MarketWatch and 
+              Barron's, where I focused on turning complex ideas into intuitive, 
+              polished interfaces. My work is driven by the details that shape great 
+              user experiences: thoughtful layouts, strong typography, accessibility, 
+              responsive design, and a high standard of visual quality.
             </p>
 
             <p>
-              I'm especially drawn to UI-focused frontend work because I enjoy
-              taking ideas from concept to polished implementation. I like
-              collaborating closely with designers, understanding the intent
-              behind a design, and translating it into interfaces that are clean,
-              maintainable, and enjoyable to use.
+              I enjoy taking projects from concept to production—designing the experience, 
+              refining interactions, and bringing everything to life in code. My background 
+              in frontend development allows me to create designs that aren't just visually 
+              compelling, but practical and accessible through implementation.
+            </p>
+
+            <p>
+              Whether I'm building a design system, prototyping a new feature, or polishing 
+              the final interface, my goal is always the same: create products that feel 
+              effortless to use and carefully crafted.
             </p>
           </div>
         </section>
@@ -55,17 +59,23 @@ export default function About() {
           <h2 className="section-title">My Approach</h2>
 
           <p>
-            I believe great frontend development is about more than matching a
-            design file. It's about understanding the user experience and making
-            thoughtful implementation decisions.
+            I believe great digital experiences are about more than creating 
+            attractive interfaces. They're the result of thoughtful design 
+            decisions that balance usability, accessibility, visual clarity, 
+            and technical execution.
           </p>
 
           <p>
-            I enjoy building interfaces that are accessible, responsive, and
-            performance-minded from the start. Whether I'm creating reusable
-            components, refining layouts, or improving user flows, I try to
-            bring both a designer's eye and an engineer's mindset to every
-            project.
+            I enjoy designing experiences that feel intuitive, responsive, 
+            and refined from the start. Whether I'm shaping a design system, 
+            refining layouts and interactions, or bringing a concept to life in code, 
+            I strive to create interfaces that are both beautiful and practical. 
+          </p>
+
+          <p>
+            My background in frontend development helps ensure that every design is 
+            not only visually polished but also accessible, maintainable, and ready 
+            for the real world.
           </p>
         </section>
 
