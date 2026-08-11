@@ -9,9 +9,9 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content">
             <h1 className="hero-title">
-                <span className="hero-sup">UI-Focused</span>
-                <span className="hero-highlight">Frontend<br className="hero-break" /> Development</span>
-                <span className="hero-sub">&amp; Design</span>
+                {/* <span className="hero-sup">Minnesota-based</span> */}
+                <span className="hero-highlight">Design<br className="hero-break" /> Engineer</span>
+                <span className="hero-sub">Web Design + Frontend</span>
             </h1>
         </div>
         <div className="hero-cta">

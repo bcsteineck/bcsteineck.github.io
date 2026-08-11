@@ -1,7 +1,7 @@
 @use '../../styles/globals' as *;
 
 
-.experience {
+.work {
 	&-role {
 		font-size: $size-2;
 		font-weight: 400;
@@ -72,7 +72,15 @@
   }
 }
 
-.client-work-grid,
+.work-section-header {
+	margin-bottom: $space-32;
+
+	h2 {
+		margin-bottom: $space-8;
+	}
+}
+
+.work-grid,
 .work-next {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -84,35 +92,47 @@
   }
 }
 
-.client-work-card {
-  display: grid;
-  gap: $space-24;
-  padding-top: $space-24;
+.work-card,
+.work-next-content {
+  display: flex;
+  flex-direction: column;
+  gap: $space-16;
 }
 
-.client-work-img {
+.work-header {
+  .section-title {
+	margin: 0;
+  }
+}
+
+.work-img {
   margin: 0;
   aspect-ratio: 3 / 2;
   overflow: hidden;
   background: var(--surface);
 }
 
-.client-work-img img {
+.work-img img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
+  border-radius: $radius;
 }
 
-.client-work-content {
+.work-content {
   display: grid;
   gap: $space-16;
 
 	.tag-list {
-		margin: $space-8 0 0;
+		margin: 0;
 	}
 
 	h3, p {
 		margin: 0;
 	}
+}
+
+.work-button {
+	width: 100%;
 }
